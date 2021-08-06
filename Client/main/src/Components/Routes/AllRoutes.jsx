@@ -1,5 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
+import { Institutes } from '../Institutes/Institutes'
+import { Knowledge } from '../Institutes/Knowledge'
 import { Navbar } from '../InstitutesNavbar/Navbar'
 
 export const AllRoutes = () => {
@@ -7,11 +9,11 @@ export const AllRoutes = () => {
         <div>
             <Navbar/>
             <Switch>
-                <Route>
-
+                <Route path = "/institutes">
+                    <Institutes/>
                 </Route>
-                <Route>
-                    
+                <Route path = "/knowledge">
+                    <Knowledge/>
                 </Route>
             </Switch>
 
