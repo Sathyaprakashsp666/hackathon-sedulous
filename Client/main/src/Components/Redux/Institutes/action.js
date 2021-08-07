@@ -18,9 +18,9 @@ export const getInstitutesFailure = () => {
     }
 }
 
-export const getDescription = (payload) => (dispatch) => {
+export const getInstitutesData = (payload) => (dispatch) => {
     dispatch(getInstitutesRequest())
-    axios.get("")
+    axios.get("https://json-server-olx.herokuapp.com/motorcycles")
     .then(res => {
         dispatch(getInstitutesSuccess(res.data))
     })

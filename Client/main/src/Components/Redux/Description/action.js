@@ -20,7 +20,7 @@ export const getDescriptionFailure = () => {
 
 export const getDescription = (payload) => (dispatch) => {
     dispatch(getDescriptionRequest())
-    axios.get("")
+    axios.get("https://json-server-projects.herokuapp.com/course")
     .then(res => {
         dispatch(getDescriptionSuccess(res.data))
     })
