@@ -13,18 +13,19 @@ import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import TransitionsModal from "./LoginModal";
 
 import Fade from "react-reveal/Fade";
+import { Link as LinkScroll } from "react-scroll";
 
 const Dasboard = () => {
   return (
     <>
       {/* Navbar */}
-      <div className={styles.nav__cont}>
+      <div id="home" className={styles.nav__cont}>
         <Link className={styles.nav__logo}>
           <img
             src="https://img.icons8.com/emoji/2x/graduation-cap-emoji.png"
             alt=""
           />
-          Career Builder
+          GURU
         </Link>
         <Link to="/">home</Link>
         <Link to="/about">about</Link>
@@ -86,6 +87,21 @@ const Dasboard = () => {
             HOTEL MANAGEMENT
           </div>
         </Link>
+        <Link to="/coding">
+          <div>
+            <img
+              src="https://img.icons8.com/emoji/2x/tractor-emoji.png"
+              alt=""
+            />
+            AGRICULTURE
+          </div>
+        </Link>
+        <Link to="/coding">
+          <div>
+            <img src="https://img.icons8.com/fluency/2x/law.png" alt="" />
+            BACHELOR OF LAWS
+          </div>
+        </Link>
       </div>
       <div className={styles.bg}>
         <div className={styles.nav__steps}>
@@ -122,6 +138,23 @@ const Dasboard = () => {
           <button>Subscribe</button>
         </div>
       </div>
+      {/* Scroll Up */}
+
+      <div className={styles.go__up}>
+        <LinkScroll
+          to="home"
+          hashSpy={true}
+          spy={true}
+          smooth={true}
+          delay={100}
+          duration={500}
+        >
+        <img
+          src="https://img.icons8.com/ios-glyphs/2x/double-up--v2.gif"
+          alt=""
+        />
+        </LinkScroll>
+      </div>
       {/* Footer */}
       <div className={styles.nav__footer}>
         <div>
@@ -138,12 +171,12 @@ const Dasboard = () => {
         </div>
         <div>
           <h4 className={styles.nav__black}>CONTACT</h4>
-          <div>
+          <div className={styles.footer__icons}>
             <CallIcon fontSize="small" />
             &nbsp; +91 987654321
           </div>
           <br />
-          <div>
+          <div className={styles.footer__icons}>
             <MailOutlineIcon fontSize="small" />
             &nbsp; career@gmail.com
           </div>

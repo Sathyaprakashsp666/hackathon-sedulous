@@ -12,12 +12,12 @@
 .modal__btn:hover {
   background-color: #0466c8c4;
 }
-.modal__profile{
-    height: 60px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.modal__profile {
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .modal__profile > img {
   width: 60px;
@@ -29,5 +29,9 @@
   width: 100%;
 }
 .modal__google {
-    width: 100%;
+  width: 100%;
+}
+.modal_close {
+  padding-left: 215px;
+  padding-bottom: 10px;
 }

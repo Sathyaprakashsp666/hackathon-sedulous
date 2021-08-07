@@ -8,6 +8,7 @@ import styles from "./Modal.module.css";
 import GoogleLogin from "react-google-login";
 import { AuthContext } from "../../AuthContext/AuthContext";
 import { useHistory } from "react-router-dom";
+import CancelIcon from "@material-ui/icons/Cancel";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -67,6 +68,22 @@ export default function TransitionsModal() {
       history.push("/");
     }
   }
+  const logOut = () => {
+    setName("");
+    setUrl("");
+    setUserIn(false);
+    localStorage.setItem(
+      "user",
+      JSON.stringify({
+        nameLocal: "",
+        userinLocal: false,
+        urlLocal: "",
+      })
+    );
+  };
+  const close = () => {
+    setOpen(false);
+  };
 
   return (
     <div>
@@ -74,6 +91,9 @@ export default function TransitionsModal() {
         <div className={styles.modal__profile}>
           <img src={urlLocal || url} alt="" />
           <p>{nameLocal || name}</p>
+          <button className={styles.modal__btn} onClick={logOut}>
+            LOGOUT
+          </button>
         </div>
       ) : (
         <button
@@ -99,6 +119,9 @@ export default function TransitionsModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
+            <div className={styles.modal_close}>
+              <CancelIcon onClick={close} />
+            </div>
             <button className={styles.modal__google_btn}>
               <GoogleLogin
                 className={styles.modal__google}
