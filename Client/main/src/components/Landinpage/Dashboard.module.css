@@ -127,6 +127,7 @@
 .nav__discover_cont a {
   text-decoration: none;
 }
+
 .nav__discover_cont div:hover {
   background-color: #0466c8;
   color: #fff;
