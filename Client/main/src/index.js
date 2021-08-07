@@ -1,18 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import {Provider} from "react-redux"
-import { store } from './Components/Redux/store';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import AuthContextProvider from "./AuthContext/AuthContext";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Provider store = {store}>
-      <React.StrictMode>
+  <React.StrictMode>
+    <BrowserRouter>
+      <AuthContextProvider>
         <App />
-      </React.StrictMode>
-    </Provider>
-  </BrowserRouter>,
-  document.getElementById('root')
+      </AuthContextProvider>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById("root")
 );

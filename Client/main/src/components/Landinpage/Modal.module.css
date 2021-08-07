@@ -1,0 +1,33 @@
+.modal__btn {
+  border-radius: 10px;
+  background-color: #0466c8;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 100px;
+  height: 35px;
+  color: #fff;
+  font-weight: 700;
+}
+.modal__btn:hover {
+  background-color: #0466c8c4;
+}
+.modal__profile{
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.modal__profile > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.modal__google_btn {
+  border: none;
+  width: 100%;
+}
+.modal__google {
+    width: 100%;
+}
