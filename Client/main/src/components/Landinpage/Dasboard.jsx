@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import styles from "./Dashboard.module.css";
 import { Link } from "react-router-dom";
 import svg from "../../Assets/career.svg";
@@ -11,10 +11,19 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import CallIcon from "@material-ui/icons/Call";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import TransitionsModal from "./LoginModal";
-
+import {shallowEqual, useDispatch, useSelector} from "react-redux"
 import Fade from "react-reveal/Fade";
-
+import {getCourses} from "../Redux/Course/action"
+import {CourseCard} from "./CourseCard"
 const Dasboard = () => {
+
+  const dispatch = useDispatch()
+  const {courses} = useSelector(state => state.courses, shallowEqual)
+
+  React.useEffect(() => {
+    dispatch(getCourses())
+  }, [dispatch])
+
   return (
     <>
       {/* Navbar */}
@@ -24,7 +33,7 @@ const Dasboard = () => {
             src="https://img.icons8.com/emoji/2x/graduation-cap-emoji.png"
             alt=""
           />
-          Career Builder
+          Guru
         </Link>
         <Link to="/">home</Link>
         <Link to="/about">about</Link>
@@ -62,30 +71,9 @@ const Dasboard = () => {
         <p>Search all the detailed information regarding colleges</p>
       </div>
       <div className={styles.nav__discover_cont}>
-        <Link to="/coding">
-          <div>
-            <img
-              src="https://img.icons8.com/fluency/2x/laptop-coding.png"
-              alt=""
-            />
-            COMPUTER/CODING
-          </div>
-        </Link>
-        <Link to="/medicalscience">
-          <div>
-            <img
-              src="https://img.icons8.com/color/2x/survival-bag.png"
-              alt=""
-            />
-            MEDICAL SCIENCE
-          </div>
-        </Link>
-        <Link to="/hotelmanagement">
-          <div>
-            <img src="https://img.icons8.com/emoji/2x/hotel-emoji.png" alt="" />
-            HOTEL MANAGEMENT
-          </div>
-        </Link>
+        {courses.map((item) => {
+          return <CourseCard key = {item.id} {...item} />
+        })}
       </div>
       <div className={styles.bg}>
         <div className={styles.nav__steps}>

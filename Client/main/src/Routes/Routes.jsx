@@ -1,22 +1,35 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Dasboard from "../components/Landinpage/Dasboard";
+import { Institutes } from "../Components/Institutes/Institutes";
+import { Knowledge } from "../Components/Institutes/Knowledge";
+import { Navbar } from "../Components/InstitutesNavbar/Navbar";
+import Dasboard from "../Components/Landinpage/Dasboard";
 
 const Routes = () => {
   return (
     <>
-      <Route exact path="/">
-        <Dasboard />
-      </Route>
-      <Route path="/computer">
-        <Dasboard />
-      </Route>
-      <Route path="/medical">
-        <Dasboard />
-      </Route>
-      <Route path="/hotemanagement">
-        <Dasboard />
-      </Route>
+    <Switch>
+        <Route exact path="/">
+          <Dasboard />
+        </Route>
+        <Route path="/computer">
+          <Dasboard />
+        </Route>
+        <Route path="/medical">
+          <Dasboard />
+        </Route>
+        <Route path="/hotemanagement">
+          <Dasboard />
+        </Route>
+        <Route path = "/institutes" >
+          <Navbar/>
+          <Institutes/>
+        </Route>
+        <Route path = "/knowledge" >
+          <Navbar/>
+          <Knowledge/>
+        </Route>
+      </Switch>
     </>
   );
 };
