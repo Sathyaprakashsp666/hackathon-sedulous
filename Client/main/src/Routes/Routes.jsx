@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Dasboard from "../components/Landinpage/Dasboard";
+import Dasboard from "../Components/Landinpage/Dasboard";
 
 const Routes = () => {
   return (
