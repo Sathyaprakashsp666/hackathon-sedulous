@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./Dashboard.module.css";
 import { Link } from "react-router-dom";
 import svg from "../../Assets/career.svg";
@@ -10,6 +10,7 @@ import YouTubeIcon from "@material-ui/icons/YouTube";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import CallIcon from "@material-ui/icons/Call";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import TransitionsModal from "./LoginModal";
 
 import Fade from "react-reveal/Fade";
 
@@ -29,7 +30,10 @@ const Dasboard = () => {
         <Link to="/about">about</Link>
         <Link to="/blog">blog</Link>
         <Link>
-          <button>LOGIN</button>
+          {/* <button>LOGIN <TransitionsModal/></button> */}
+          <button>
+            <TransitionsModal />
+          </button>
         </Link>
       </div>
       <div className={styles.nav__career_cont}>
@@ -54,7 +58,7 @@ const Dasboard = () => {
       {/* Discover categories container  */}
 
       <div className={styles.nav__center}>
-        <h1>Discover College</h1>
+        <h1>Explore Careers</h1>
         <p>Search all the detailed information regarding colleges</p>
       </div>
       <div className={styles.nav__discover_cont}>
