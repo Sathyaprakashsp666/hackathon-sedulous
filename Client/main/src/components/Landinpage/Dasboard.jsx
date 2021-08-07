@@ -11,29 +11,29 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import CallIcon from "@material-ui/icons/Call";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import TransitionsModal from "./LoginModal";
-import {shallowEqual, useDispatch, useSelector} from "react-redux"
+import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import Fade from "react-reveal/Fade";
-import {getCourses} from "../Redux/Course/action"
-import {CourseCard} from "./CourseCard"
-const Dasboard = () => {
+import { getCourses } from "../Redux/Course/action";
+import { CourseCard } from "./CourseCard";
 
-  const dispatch = useDispatch()
-  const {courses} = useSelector(state => state.courses, shallowEqual)
+const Dasboard = () => {
+  const dispatch = useDispatch();
+  const { courses } = useSelector((state) => state.courses, shallowEqual);
 
   React.useEffect(() => {
-    dispatch(getCourses())
-  }, [dispatch])
+    dispatch(getCourses());
+  }, [dispatch]);
 
   return (
     <>
       {/* Navbar */}
-      <div className={styles.nav__cont}>
+      <div id="home" className={styles.nav__cont}>
         <Link className={styles.nav__logo}>
           <img
             src="https://img.icons8.com/emoji/2x/graduation-cap-emoji.png"
             alt=""
           />
-          Guru
+          GURU
         </Link>
         <Link to="/">home</Link>
         <Link to="/about">about</Link>
@@ -72,7 +72,7 @@ const Dasboard = () => {
       </div>
       <div className={styles.nav__discover_cont}>
         {courses.map((item) => {
-          return <CourseCard key = {item.id} {...item} />
+          return <CourseCard key={item.id} {...item} />;
         })}
       </div>
       <div className={styles.bg}>
@@ -110,6 +110,23 @@ const Dasboard = () => {
           <button>Subscribe</button>
         </div>
       </div>
+      {/* Scroll Up */}
+
+      <div className={styles.go__up}>
+        {/* <LinkScroll
+          to="home"
+          hashSpy={true}
+          spy={true}
+          smooth={true}
+          delay={100}
+          duration={500}
+        > */}
+        <img
+          src="https://img.icons8.com/ios-glyphs/2x/double-up--v2.gif"
+          alt=""
+        />
+        {/* </LinkScroll> */}
+      </div>
       {/* Footer */}
       <div className={styles.nav__footer}>
         <div>
@@ -126,12 +143,12 @@ const Dasboard = () => {
         </div>
         <div>
           <h4 className={styles.nav__black}>CONTACT</h4>
-          <div>
+          <div className={styles.footer__icons}>
             <CallIcon fontSize="small" />
             &nbsp; +91 987654321
           </div>
           <br />
-          <div>
+          <div className={styles.footer__icons}>
             <MailOutlineIcon fontSize="small" />
             &nbsp; career@gmail.com
           </div>

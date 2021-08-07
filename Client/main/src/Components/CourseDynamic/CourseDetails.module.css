@@ -1,0 +1,38 @@
+.descriptionBox {
+    border: 1px solid black;
+}
+.descriptionBox > h2:nth-child(1) {
+    text-align: center; 
+    color : #0466C8;
+}
+
+.descriptionBox > p:nth-child(2) {
+    margin: 0 25% 3% 25%;
+    font-size: 17px;
+}
+
+.descriptionBox > div:nth-child(3) > button:nth-child(1) {
+   margin-left: 39%;
+    width: 9%;
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #0466C8;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.descriptionBox > div:nth-child(3) button:nth-child(2) {
+    margin-left: 5%;
+    width: 9%;
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #0466C8;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}

@@ -1,10 +1,9 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux"
 import thunk from "redux-thunk"
 import {reducer as institutesReducer} from "./Institutes/reducer"
-import {reducer as coursesReducer} from "./Course/reducer"
+
 const rootReducer = combineReducers({
     institutes: institutesReducer,
-    courses: coursesReducer
 })
 
 export const store = createStore(rootReducer, compose(applyMiddleware(thunk),
