@@ -96,15 +96,30 @@ const Dasboard = () => {
           </div>
         </div>
       </div>
+      {/* Let's Talk section */}
+      <div className={styles.talk__cont}>
+        <p className={styles.talk__title}>
+          Do you want to kick start your <br />
+          carrer ?
+        </p>
+        <h2>Let's Connect</h2>
+        <p>
+          We are always eager to hear your queries and help you out
+          <br /> with the best solution. Connect today.
+        </p>
+        <Link to="/sessionWithCareerExpert">
+          <button>CONNECT</button>
+        </Link>
+      </div>
       {/* Subscribe container */}
-      <div className={styles.nav__subscribe_cont}>
+      {/* <div className={styles.nav__subscribe_cont}>
         <h1>SUBSCRIBE </h1>
         <p>To get the updates of career opportunities</p>
         <div className={styles.nav__subscribe_btn}>
           <input type="email" placeholder="Enter your email" />
           <button>Subscribe</button>
         </div>
-      </div>
+      </div> */}
 
       {/* Footer */}
       <Footer />
