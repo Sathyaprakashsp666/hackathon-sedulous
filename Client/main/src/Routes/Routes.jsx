@@ -7,7 +7,7 @@ import Dasboard from "../Components/Landinpage/Dasboard";
 import { DynamicCardContent } from "../Components/DynamicCardContents/DynamicCardContent";
 import Navbar from "../Components/Landinpage/Navbar";
 import Footer from "../Components/Landinpage/Footer";
-
+import {About } from "../Components/AboutPage/About"
 const Routes = () => {
   return (
     <>
@@ -15,6 +15,10 @@ const Routes = () => {
         <Route exact path="/">
           <Dasboard />
         </Route>
+        <Route path="/about" exact>
+          <About />
+          <Footer/>
+          </Route>
         <Route path="/talkToExpert" exact component={Home} />
         <Route exact path="/sessionWithCareerExpert" component={Video} />
         <Route exact path="/chat" component={Chat} />
