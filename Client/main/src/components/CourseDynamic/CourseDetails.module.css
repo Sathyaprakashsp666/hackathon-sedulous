@@ -1,108 +1,115 @@
 .descriptionBox {
-    /* border: 1px solid black; */
-    margin: 2%;
+  /* border: 1px solid black; */
+  margin: 2%;
 }
 .descriptionBox > h1:nth-child(1) {
-    text-align: center; 
-    margin-bottom: 3%;
-    
+  text-align: center;
+  margin-bottom: 3%;
 }
 
 .descriptionBox > p:nth-child(2) {
-    border-radius: 5px;
-    background-color: #0466C8;
-    color: #fff;
-    padding: 1%;
-    margin: 0 25% 3% 25%;
-    font-size: 17px;
+  border-radius: 5px;
+  background-color: #0466c8;
+  color: #fff;
+  padding: 1%;
+  margin: 0 25% 3% 25%;
+  font-size: 17px;
 }
 
 .descriptionBox > h1:nth-child(3) {
-    text-align: center;
-    margin: 7% 0 3% 0;
-} 
+  text-align: center;
+  margin: 7% 0 3% 0;
+}
 
 .descriptionBox > div:nth-child(4) {
-    border: 2px solid #0466C8;
-    border-radius: 5px;
-    text-align: center;
-    margin: 0 25% 5% 25%;
-    background-color: #fff;
-    margin-bottom: 5%;
-    padding: 10px;
-    color: #0466C8;
+  /* border: 2px solid #0466c8; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 25% 5% 25%;
+  background-color: #fff;
+  margin-bottom: 5%;
+  padding: 10px;
+  color: #0466c8;
 }
 
-.descriptionBox > div:nth-child(4):hover {
-    color: #fff;
-    background-color: #0466C8;
-}
+/* .descriptionBox > div:nth-child(4):hover {
+  color: #fff;
+  background-color: #0466c8;
+} */
 
 .career {
-    font-size: 20px;
-    cursor: pointer;
+  font-size: 20px;
+  cursor: pointer;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
 }
 
 .discuss {
-    text-align: center;
-    margin-bottom: 3%;
-    margin-top: 2%;
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 2%;
 }
 
 .interactButtons {
-    margin-left: 45%;
+  margin-left: 45%;
+
 }
 
-.interactButtons >  {
-    width: 10%;
+.interactButtons > {
+  min-width: 10%;
 }
 
 .access {
-    width: 20%;
-    border: 2px solid #0466C8;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 5px;
-    margin: 1%;
-    color : #0466C8;
+  width: 20%;
+  border: 2px solid #0466c8;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px;
+  margin: 1%;
+  color: #0466c8;
 }
 
 .access:hover {
-    border: 1px solid #fff;
-    color: #fff;
-    background-color: #0466C8;
-    padding: 7px;
-    margin: 1%;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #0466c8;
+  padding: 7px;
+  margin: 1%;
 }
 
 .institutesWrapper > h1:nth-child(1) {
-    text-align: center;
-    margin-top: 7%;
-    margin-bottom: 2%;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 2%;
 }
 
 .institutes {
-    border-radius: 20px;
-background: #0466C8;
-box-shadow: inset -30px -30px 60px #045bb2,
-            inset 30px 30px 60px #0471de;
-    float: left;
-    width: 20%;
-    height: 200px;
-    margin-left: 4%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    text-align: center;
+  border-radius: 20px;
+  background: #0466c8;
+  box-shadow: inset -30px -30px 60px #045bb2, inset 30px 30px 60px #0471de;
+  float: left;
+  width: 20%;
+  height: 200px;
+  margin-left: 4%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .institutes > img {
-    padding: 2%;
-    background-color: #fff;
-    width: 100px;
-    margin: 5% 0 5% 0;
+  padding: 2%;
+  background-color: #fff;
+  width: 100px;
+  height: 50px;
+  margin: 5% 0 5% 0;
 }
 
 .institutes > h5 {
-    color: #fff;
-    font-size: 18px;
+  color: #fff;
+  font-size: 18px;
 }
