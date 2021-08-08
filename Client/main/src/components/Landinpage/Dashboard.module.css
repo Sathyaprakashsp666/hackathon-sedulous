@@ -1,3 +1,5 @@
+
+
 .nav__cont {
   width: 100%;
   height: 13vh;
@@ -205,3 +207,34 @@
 /* .CourseCard__link :hover {
   color: #fff;
 } */
+
+/* Let's talk section */
+
+.talk__cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.talk__cont button {
+  background-color: #0466c8;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.talk__cont p {
+  color: gray;
+}
+
+.talk__title {
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+}
