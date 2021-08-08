@@ -1,0 +1,94 @@
+.nav__cont {
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 10px;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  /* background-color: #0466c8; */
+}
+.nav__cont a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav__gray {
+  color: gray;
+}
+
+.nav__cont img {
+  height: 60px;
+}
+.nav__logo {
+  font-size: 10px;
+}
+.nav__cont > a {
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0466c8;
+}
+.nav__cont > a:hover {
+  color: #0466c8bb;
+}
+/* .nav__cont > a > button {
+    border-radius: 10px;
+     background-color: #0466c8;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    font-weight: 700;
+  } */
+/* .nav__cont > a > button:hover {
+    background-color: #0466c8c4;
+  } */
+
+.nav__cont > a > button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+.nav__career_cont {
+  width: 80%;
+  margin: auto;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 20%;
+}
+.nav__career_cont > div {
+  width: 40%;
+  height: 100%;
+}
+.nav__blue {
+  color: #0466c8;
+}
+.nav__career_left {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.navbar__imgCont {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}

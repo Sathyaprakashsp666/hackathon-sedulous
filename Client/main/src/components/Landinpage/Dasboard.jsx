@@ -4,22 +4,17 @@ import { Link } from "react-router-dom";
 import svg from "../../Assets/career.svg";
 import one from "../../Assets/one.svg";
 import two from "../../Assets/two.svg";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import YouTubeIcon from "@material-ui/icons/YouTube";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import CallIcon from "@material-ui/icons/Call";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import TransitionsModal from "./LoginModal";
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
 import Fade from "react-reveal/Fade";
 import { getCourses } from "../Redux/Course/action";
 import { CourseCard } from "./CourseCard";
+import Footer from "./Footer";
 
 const Dasboard = () => {
   const dispatch = useDispatch();
   const { courses } = useSelector((state) => state.courses, shallowEqual);
-  console.log(courses)
+  console.log(courses);
   React.useEffect(() => {
     dispatch(getCourses());
   }, [dispatch]);
@@ -33,7 +28,7 @@ const Dasboard = () => {
             src="https://img.icons8.com/emoji/2x/graduation-cap-emoji.png"
             alt=""
           />
-          GURU
+          CAREER GURU
         </Link>
         <Link to="/">home</Link>
         <Link to="/about">about</Link>
@@ -110,66 +105,9 @@ const Dasboard = () => {
           <button>Subscribe</button>
         </div>
       </div>
-      {/* Scroll Up */}
 
-      <div className={styles.go__up}>
-        {/* <LinkScroll
-          to="home"
-          hashSpy={true}
-          spy={true}
-          smooth={true}
-          delay={100}
-          duration={500}
-        > */}
-        <img
-          src="https://img.icons8.com/ios-glyphs/2x/double-up--v2.gif"
-          alt=""
-        />
-        {/* </LinkScroll> */}
-      </div>
       {/* Footer */}
-      <div className={styles.nav__footer}>
-        <div>
-          <h4 className={styles.nav__black}>USEFUL LINKS</h4>
-          <p>Home</p>
-          <p>About</p>
-          <p>Blog</p>
-        </div>
-        <div>
-          <h4 className={styles.nav__black}>HELP</h4>
-          <p>Privacy</p>
-          <p>Policy</p>
-          <p>Support</p>
-        </div>
-        <div>
-          <h4 className={styles.nav__black}>CONTACT</h4>
-          <div className={styles.footer__icons}>
-            <CallIcon fontSize="small" />
-            &nbsp; +91 987654321
-          </div>
-          <br />
-          <div className={styles.footer__icons}>
-            <MailOutlineIcon fontSize="small" />
-            &nbsp; career@gmail.com
-          </div>
-          <div>
-            <p>
-              &nbsp; <p>&nbsp;</p>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className={styles.nav__contact}>
-        <p>All rights reserved</p>
-        <p>copyright@2021-2022</p>
-        <div>
-          <InstagramIcon />
-          <FacebookIcon />
-          <YouTubeIcon />
-          <TwitterIcon />
-        </div>
-      </div>
+      <Footer />
     </>
   );
 };
