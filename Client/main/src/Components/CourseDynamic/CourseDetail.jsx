@@ -7,27 +7,31 @@ export const CourseDetail = (props) => {
     return (
         <div>
             <div className = {styles.descriptionBox}>
-                <h2>Description</h2>
+                <h1>Description</h1>
                 <p>{props.description}</p>
-                <h2>Career Options</h2>
+                <h1>Career Options</h1>
                 <div>
-                    {props.career?.map((item) => <p>{item}</p>)}
+                    <p className = {styles.career} >{props.career?.map((item) => <p>{item}</p>)}</p>
                 </div>
                 <div>
-                    <Link to = "/talkToExpert"><button >View Chat</button></Link>
-                    <Link to = "/sessionWithCareerExpert"><button >View Video Call</button></Link>
+                    <h1 className = {styles.discuss}>Have a Discussion with Our Expert.</h1>
+                </div>
+                <div className = {styles.interactButtons}>
+                    <Link to = "/talkToExpert"><button className = {styles.access} >Chat with an expert</button></Link>
+                    <br />
+                    <Link to = "/sessionWithCareerExpert"><button className = {styles.access}>Video Call an expert</button></Link>
                 </div>
             </div>
-            <div>
-                <h2>Institutes</h2>
+            <div className = {styles.institutesWrapper}>
+                <h1>Top Institutes</h1>
                 <div>
                     {props.institutes?.map((item) => (
-                        <div>
-                            <a href={item.websiteLinks} target = "_blank">
-                                <img style = {{height: "70px", width: "100px"}} src = {item.image} alt = "image" />
-                                <h3>{item.name}</h3>
-                            </a>
-                        </div>
+                        <a href={item.websiteLinks} target = "_blank">
+                            <div className = {styles.institutes}>
+                                <img src = {item.image} alt = "image" />
+                                <h5>{item.name}</h5>   
+                            </div>
+                        </a>
                     ))}
                 </div>
             </div>
