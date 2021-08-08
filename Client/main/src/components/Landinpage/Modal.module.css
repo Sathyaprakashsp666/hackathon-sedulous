@@ -17,11 +17,12 @@
   background-color: #fff;
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  gap: 10px;
 }
 .modal__profile > img {
   width: 60px;
-  height: 60px;
+  height: 50px;
   border-radius: 50%;
 }
 .modal__google_btn {
