@@ -14,7 +14,6 @@
   left: 0;
   right: 0;
   background-color: #fff;
-  /* background-color: #0466c8; */
 }
 .nav__cont a {
   display: flex;
@@ -42,20 +41,7 @@
 .nav__cont > a:hover {
   color: #0466c8bb;
 }
-/* .nav__cont > a > button {
-  border-radius: 10px;
-   background-color: #0466c8;
-  border: none;
-  outline: none;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  width: 100px;
-  height: 35px;
-  color: #fff;
-  font-weight: 700;
-} */
-/* .nav__cont > a > button:hover {
-  background-color: #0466c8c4;
-} */
+
 
 .nav__cont > a > button {
   border: none;
@@ -88,6 +74,8 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+
 /* Discover categories container */
 .nav__center {
   display: flex;
@@ -162,6 +150,8 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+
 /* Subscribe container */
 .nav__subscribe_cont {
   display: flex;
@@ -204,9 +194,7 @@
   text-decoration: none;
 }
 
-/* .CourseCard__link :hover {
-  color: #fff;
-} */
+
 
 /* Let's talk section */
 
