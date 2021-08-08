@@ -1,7 +1,7 @@
 import { GET_DESCRIPTION_FAILURE, GET_DESCRIPTION_REQUEST, GET_DESCRIPTION_SUCCESS } from "./actionTypes"
 
 const initState = {
-    description: []
+    description: {}
 }
 
 export const reducer = (state = initState, {type, payload}) => {
@@ -15,7 +15,7 @@ export const reducer = (state = initState, {type, payload}) => {
         case GET_DESCRIPTION_SUCCESS: {
             return {
                 ...state,
-                description: [...payload]
+                description: {...payload}
             }
         }
 

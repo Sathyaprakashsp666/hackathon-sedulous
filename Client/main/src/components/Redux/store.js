@@ -2,9 +2,11 @@ import { applyMiddleware, combineReducers, compose, createStore } from "redux"
 import thunk from "redux-thunk"
 import {reducer as institutesReducer} from "./Institutes/reducer"
 import {reducer as coursesReducer} from "./Course/reducer"
+import { reducer as descriptionReducer } from "./Description/reducer"
 const rootReducer = combineReducers({
     institutes: institutesReducer,
-    courses: coursesReducer
+    courses: coursesReducer,
+    dynamicContent: descriptionReducer,
 })
 
 export const store = createStore(rootReducer, compose(applyMiddleware(thunk),

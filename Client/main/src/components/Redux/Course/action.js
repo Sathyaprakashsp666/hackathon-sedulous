@@ -20,9 +20,10 @@ export const getCourseFailure = () => {
 
 export const getCourses = (payload) => (dispatch) => {
     dispatch(getCourseRequest())
-    axios.get("https://json-server-projects.herokuapp.com/courses")
+    axios.get("http://localhost:2244/career")
     .then(res => {
-        dispatch(getCourseSuccess(res.data))
+        dispatch(getCourseSuccess(res.data.data))
+        // console.log(res.data.data)
     })
     .catch(err => {
         console.log(err)

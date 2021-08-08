@@ -1,0 +1,218 @@
+[
+    {
+      "id": 1,
+      "image": "https://img.icons8.com/fluency/2x/laptop-coding.png",
+      "text": "COMPUTER CODING",
+      "description": "Coding, sometimes called computer programming, is how we communicate with computers. Code tells a computer what actions to take, and writing code is like creating a set of instructions. By learning to write code, you can tell computers what to do or how to behave in a much faster way.",
+      "career": [
+        "Software application developer",
+        "Web developer",
+        "Computer systems engineer",
+        "Database administrator",
+        "Computer systems analyst",
+        "Software quality assurance (QA) engineer",
+        "Business intelligence analyst",
+        "Computer programmer",
+        "Network system administrator"
+      ],
+      "institutes"  : [ {
+        "name": "Masai school",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTAoE0up6ZDDJEB17bl7u1bolHaRFU2SnMQ4LhBKiEC0wSzZLqKih84aDbkoBnSivhJ34&usqp=CAU",
+        "category": "coding",
+        "websiteLinks": "https://www.masaischool.com/"
+      },
+      {
+        "name": "Scimox",
+        "image": "https://scimox.com/wp-content/uploads/2018/03/scimox-oppo.png",
+        "category": "coding",
+        "websiteLinks": "https://scimox.com/"
+      },
+      {
+        "name": "Almabetter",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybJq-GjLbzokyge-F3X-TgH7EmZqB1-rWxU5gR7Pok05-cc9vrfRnbANp380dkY3GPYk&usqp=CAU",
+        "category": "coding",
+        "websiteLinks": "https://www.almabetter.com/"
+      },
+      {
+        "name": "Edufect",
+        "image": "https://www.edufect.com/wp-content/uploads/2018/06/edufect.png",
+        "category": "coding",
+        "websiteLinks": "https://www.edufect.com/"
+      },
+      {
+        "name": "IntelliPaat",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfbndoUaMeC5ZzYYEVP97omG8i1ID5soVKmGZUmEhnw7SWBthZo_uSzFoEJkhzuPzTECY&usqp=CAU",
+        "category": "coding",
+        "websiteLinks": "https://intellipaat.com/academy/"
+      },
+      {
+        "name": "Newton School",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0G3L6XidHU2Bw4igzVS00VwBE0vBG05SDgo2JZfgCoz-389R42E-RaoEqD_9RfAmyuUE&usqp=CAU",
+        "category": "coding",
+        "websiteLinks": "https://www.newtonschool.co/"
+      },
+      {
+        "name": "Perceptrons",
+        "image": "https://www.perceptrons.ai/img/logo-new-p.png",
+        "category": "coding",
+        "websiteLinks": "https://www.perceptrons.ai/"
+      },
+      {
+        "name": "Imarticus",
+        "image": "https://imarticus.org/static/imarticusFavicon-ea8758b838dbfca5614552af03e1cf10.jpg",
+        "category": "coding",
+        "websiteLinks": "https://imarticus.org/"
+      },
+      {
+        "name": "Geekstar",
+        "image": "https://geekster.in/wp-content/uploads/2021/03/Geekster_logo_full-1024x264-1.png",
+        "category": "coding",
+        "websiteLinks": "https://geekster.in/"
+      } ]
+    },
+    {
+      "id": 2,
+      "image": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/sheaf-of-rice_1f33e.png",
+      "text": "AGRICULTURE",
+      "description": "the science, art, or practice of cultivating the soil, producing crops, and raising livestock and in varying degrees the preparation and marketing of the resulting products",
+      "career": [
+        "Agricultural engineer",
+        "Agricultural economist",
+        "Farm manager",
+        "Soil and plant scientist",
+        "Conservation planner",
+        "Commercial Horticulturalist",
+        "Agricultural salesperson"
+      ],
+      "institutes": [
+        {
+          
+          "name": "ICAR-National Dairy Research Institute (NDRI)",
+          "image": "http://ndri.res.in/wp-content/uploads/2019/02/ndrilogo.png",
+          "category": "agriculture",
+          "websiteLinks": "http://ndri.res.in/"
+        },
+        {
+          
+          "name": "ICAR-Indian Agricultural Research Institute",
+          "image": "https://www.iari.res.in/images/header_bg.jpg",
+          "category": "agriculture",
+          "websiteLinks": "https://www.iari.res.in/"
+        },
+        {
+          
+          "name": "GB Pant University of Agriculture & Technology",
+          "image": "https://www.gbpuat.ac.in/img/Logo1.png",
+          "category": "agriculture",
+          "websiteLinks": "https://www.gbpuat.ac.in/"
+        },
+        {
+          
+          "name": "Chaudhary Charan Singh, Haryana Agriculture University",
+          "image": "https://admissions.hau.ac.in/App_Themes/CCSBLUE/online/ccshau-logo.png",
+          "category": "agriculture",
+          "websiteLinks": "https://admissions.hau.ac.in/"
+        },
+        {
+          
+          "name": "ICAR-Indian Veterinary Research Institute",
+          "image": "http://www.ivri.nic.in/images/IVRISignature1.png",
+          "category": "agriculture",
+          "websiteLinks": "http://www.ivri.nic.in/"
+        },{
+          
+          "name": "Professor Jayashankar Telangana State Agricultural University",
+          "image": "https://www.pjtsau.edu.in/images/logo.png",
+          "category": "agriculture",
+          "websiteLinks": "https://www.pjtsau.edu.in/"
+        },
+        {
+         
+          "name": "Punjab Agricultural University",
+          "image": "https://www.pau.edu/images/pau_logo1.png",
+          "category": "agriculture",
+          "websiteLinks": "https://www.pau.edu/"
+        },
+        {
+          
+          "name": "Guru Angad Dev Veterinary and Animal Sciences University",
+          "image": "https://www.gadvasu.in/assests/frontend/imgs/logo-gadvasu.png",
+          "category": "agriculture",
+          "websiteLinks": "https://www.gadvasu.in/"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "image": "https://img.icons8.com/emoji/2x/hotel-emoji.png",
+      "text": "HOTEL MANAGEMENT",
+      "description": "Hotel Management is a field of business and a study, that tends itself to the operational aspects of a hotel as well as a wide range of affiliated topics. These include accounting, administration, finance, information systems, human resource management, public relations, strategy, marketing, revenue management, sales, change management, leadership, gastronomy and more. Generally, a Hotel Management Company helps owners to bring in the right expert Hotel Management expertise and acquire the right talent to run the hotel business smoothly along with increasing the financial performance. They thereby ensure that every aspect of the property is properly run and organised. This can apply to any property type such as (independent) hotels, resorts, hostels, motels.",
+        "career": [
+          "Hotels and tourism associations",
+          "Club/ restaurant management",
+          "Cruise ship hotel management",
+          "Airline catering and cabin services",
+          "Kitchen management in hotels",
+          "Front office management in hotel, resorts",
+          "Hospitality services in the Indian Navy"
+        ],
+        "institutes": [        
+          {
+            
+            "name": "Institute of Hotel Management, Catering & Nutrition, PUSA New Delhi",
+            "image": "http://ihmpusa.net/wp-content/uploads/2020/05/NEW_LOGO1.png",
+            "category": "hotelmanagement",
+            "websiteLinks": "https://ihmpusa.net/"
+          },
+          {
+            
+            "name": "Welcomgroup Graduate School of Hotel Administration",
+            "image": "https://manipal.edu/content/dam/manipal/mu/mcops-manipal/Images_new/MAHE_White.svg",
+            "category": "hotelmanagement",
+            "websiteLinks": "https://manipal.edu/wgsha.html"
+          },
+          {
+
+            "name": "IHM Mumbai",
+            "image": "http://www.ihmctan.edu/images/banner-3.jpg",
+            "category": "hotelmanagement",
+            "websiteLinks": "http://www.ihmctan.edu/"
+          },
+          {
+            
+            "name": "IHM Hyderabad",
+            "image": "https://www.ihmhyd.org/assets/images/ihm-logo.png",
+            "category": "hotelmanagement",
+            "websiteLinks": "https://www.ihmhyd.org/"
+          },
+          {
+            
+            "name": "IHM Chennai",
+            "image": "http://www.ihmchennai.org/ihms/images/logo-ihm.png",
+            "category": "hotelmanagement",
+            "websiteLinks": "http://www.ihmchennai.org/ihmchennai/"
+          },
+          {
+            
+            "name": "IHM Lucknow",
+            "image": "http://www.ihmlucknow.com/wp-content/uploads/2018/05/ihm-logo-hindi-1.png",
+            "category": "hotelmanagement",
+            "websiteLinks": "http://www.ihmlucknow.com/"
+          },
+          {
+            
+            "name": "IHM Kolkata",
+            "image": "https://ihmkol.org/wp-content/uploads/2021/05/Final-logo1000.jpg",
+            "category": "hotelmanagement",
+            "websiteLinks": "https://ihmkol.org/"
+          },
+          {
+            
+            "name": "Army Institute of Hotel Management and Catering Technology (AIHMCT)",
+            "image": "http://aihmctbangalore.edu.in/wp-content/uploads/2015/12/aihmlogo%402x1.png",
+            "category": "hotelmanagement",
+            "websiteLinks": "http://aihmctbangalore.edu.in/"
+          }
+        ]
+    }
+  ]

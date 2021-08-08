@@ -19,7 +19,7 @@ import { CourseCard } from "./CourseCard";
 const Dasboard = () => {
   const dispatch = useDispatch();
   const { courses } = useSelector((state) => state.courses, shallowEqual);
-
+  console.log(courses)
   React.useEffect(() => {
     dispatch(getCourses());
   }, [dispatch]);
@@ -72,7 +72,7 @@ const Dasboard = () => {
       </div>
       <div className={styles.nav__discover_cont}>
         {courses.map((item) => {
-          return <CourseCard key={item.id} {...item} />;
+          return <CourseCard key={item._id} {...item} />;
         })}
       </div>
       <div className={styles.bg}>

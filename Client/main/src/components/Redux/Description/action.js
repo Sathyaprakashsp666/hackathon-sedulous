@@ -18,14 +18,19 @@ export const getDescriptionFailure = () => {
     }
 }
 
+
+
 export const getDescription = (payload) => (dispatch) => {
     dispatch(getDescriptionRequest())
-    axios.get("https://json-server-projects.herokuapp.com/course")
+    console.log(payload.id)
+    axios.get(`http://localhost:2244/career/${payload.id}`)
     .then(res => {
-        dispatch(getDescriptionSuccess(res.data))
+        dispatch(getDescriptionSuccess(res.data.data))
+        // console.log(res.data.data)
     })
     .catch(err => {
         console.log(err)
         dispatch(getDescriptionFailure())
     })
 }
+
