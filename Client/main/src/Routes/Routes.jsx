@@ -15,7 +15,10 @@ const Routes = () => {
         <Route exact path="/">
           <Dasboard />
         </Route>
-        <Route path="/about" exact component={About} />
+        <Route path="/about" exact>
+          <About />
+          <Footer/>
+          </Route>
         <Route path="/talkToExpert" exact component={Home} />
         <Route exact path="/sessionWithCareerExpert" component={Video} />
         <Route exact path="/chat" component={Chat} />
