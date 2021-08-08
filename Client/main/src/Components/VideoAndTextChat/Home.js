@@ -8,7 +8,7 @@ const Home = () => {
 		}
 	
 	const connectToChat = () => {
-		window.location.href = '/chat?name=user&room=Expert_Interaction'
+		window.location.href = '/chat?name=user&room=Expert%20Interaction'
 	}
 
 		return (
