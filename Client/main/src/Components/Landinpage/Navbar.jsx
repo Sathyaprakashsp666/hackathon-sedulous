@@ -25,7 +25,7 @@ const Navbar = () => {
             src="https://img.icons8.com/emoji/2x/graduation-cap-emoji.png"
             alt=""
           />
-          GURU
+          cAREER GURU
         </Link>
         <Link to="/">home</Link>
         <Link to="/about">about</Link>
